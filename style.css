@@ -4,6 +4,7 @@ html,body{
     margin:0px;
     transition:1s;
     scroll-behavior: smooth;
+    zoom:100%;
 }
 body.dark-mode {
   background-color:#100C08;
@@ -257,6 +258,9 @@ body.dark-mode {
     width: 80%;
     position: relative;
     left: 10%;
+  }
+  #write0{
+      text-align:center:
   }
  }
  @media (min-width:451px) and (max-width:850px){
