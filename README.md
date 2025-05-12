@@ -16,5 +16,5 @@ It was made up by HTML,CSS & JS. </p>
 <hr>
 🔗<strong>Usage</strong><br>
 <hr>
-[https://uglyboy77.github.io/uglyboy-portfolio/]
+[https://uglyboy77.github.io/uglyboy-portfolio/]<br>
 click on the above link to be able to access the website and provide any bugs or problems you encountered. 
