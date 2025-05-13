@@ -275,9 +275,6 @@ body.dark-mode {
     width: 40%;
     height: 40%;
   }
-   .write00, .write01{
-    opacity: 0;
-  }
    #write0{
       text-align:center:
       align-items: center;
@@ -288,7 +285,9 @@ body.dark-mode {
   .Projects {
     display: block;
   }
- }
+#write0{
+    font-size:smaller;
+}
  @media (min-width:851px) and (max-width:1370px){
   .Image2{
     height: 80%;
