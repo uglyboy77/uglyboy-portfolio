@@ -18,3 +18,6 @@ It was made up by HTML,CSS & JS. </p>
 <hr>
 [https://uglyboy77.github.io/uglyboy-portfolio/]<br>
 click on the above link to be able to access the website and provide any bugs or problems you encountered. 
+[https://www.figma.com/community/file/1504234361382227255/portfolio-website-ui-ux] <br>
+click on the above link to view the UI/UX design of the website.
+
