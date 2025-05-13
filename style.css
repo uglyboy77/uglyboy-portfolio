@@ -182,6 +182,7 @@ body.dark-mode {
  }
  .fab.fa-github{
   font-size: 20px;
+  margin-left: 50%;
  }
  .fab.fa-github:hover {
     color: #181717; 
