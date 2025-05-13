@@ -260,14 +260,25 @@ body.dark-mode {
    .Projects, #about{
     display: block;
   }
+   .project-box, .project-box2, .Image2{
+    width: 80%;
+    height: 80%;
+    font-size: small;
+  }
   .Image1{
     height: 80%;
     width: 80%;
     position: relative;
     left: 10%;
   }
-     
-  #write0{
+   .image3{
+    width: 40%;
+    height: 40%;
+  }
+   .write00, .write01{
+    opacity: 0;
+  }
+   #write0{
       text-align:center:
       align-items: center;
      justify-content: center;
