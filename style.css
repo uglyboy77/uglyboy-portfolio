@@ -172,6 +172,24 @@ body.dark-mode {
  .live1{
   align-items:center;
   display:flex ;
+ }.live1 a:hover{ 
+  color: #181717; 
+  transition: color 0.3s ease-in-out;
+ }
+  body.dark-mode .live1 a:hover{
+    color: bisque; 
+    transition: color 0.3s ease-in-out;
+ }
+ .fab.fa-github{
+  font-size: 20px;
+ }
+ .fab.fa-github:hover {
+    color: #181717; 
+    transition: color 0.3s ease-in-out;
+}
+ body.dark-mode .fab.fa-github:hover{
+    color: bisque; 
+    transition: color 0.3s ease-in-out;
  }
  .img1{
   width: 7%;
