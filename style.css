@@ -138,6 +138,19 @@ body.dark-mode {
   display: flex;
   align-items: center; 
  }
+.resume{
+  background-color: rgb(126, 3, 241);
+  border-radius: 5px;
+  width: 15%;
+  position: relative;
+  left: 43%;
+  text-align: center;
+  font-weight: 800;
+ }
+ .resume:hover{
+  box-shadow: 2px 2px 5px rgb(232, 158, 158);
+  transition: 0.5s ease-in-out;
+ }
  #projects{
   text-align: center;
  }
@@ -282,6 +295,9 @@ body.dark-mode {
       align-items: center;
      justify-content: center;
   } 
+   .resume{
+    width: 50%;
+  }
  }
  @media (min-width:451px) and (max-width:850px){
   .Projects {
@@ -290,6 +306,10 @@ body.dark-mode {
 #write0{
     font-size:smaller;
 }
+     .resume{
+    width: 50%;
+  }
+ }
  @media (min-width:851px) and (max-width:1370px){
   .Image2{
     height: 80%;
