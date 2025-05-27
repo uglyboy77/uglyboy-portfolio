@@ -292,16 +292,15 @@ nav, #toggle{
   visibility: visible;
   opacity: 1;
   transition: 2s ease-in-out;
+  background-color:transparent;
   padding: 25px;
-  position: fixed;
   z-index: 3;
   display: flex;
   box-shadow: 5px 5px 5px pink;
  }
  nav.show{
   width: 50%;
-  padding-left: 100px;
-  margin-left:3px;
+  padding-left: 85px;
  }
   #toggle.show{
     z-index:4;
