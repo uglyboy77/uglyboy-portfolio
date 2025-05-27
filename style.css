@@ -302,13 +302,13 @@ nav, #toggle{
  nav.show{
   width: 50%;
   padding-left: 100px;
-  display:flex;
   margin-left:3px;
  }
   #toggle.show{
     z-index:4;
     position:relative;
     top:5px;
+    background-color:transparent;
  }
     button{
     position: relative;
