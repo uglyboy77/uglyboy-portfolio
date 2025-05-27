@@ -281,9 +281,9 @@ body.dark-mode {
   .togglemenu {
     font-size: 40px;
     position: fixed;
-    top: 5px;
+    top: 10px;
     left: 10px;
-    z-index: 1001;
+    z-index:5;
     padding:20px;
   }
 nav, #toggle{
@@ -306,6 +306,7 @@ nav, #toggle{
  }
   #toggle.show{
     z-index:4;
+    padding:30px;
  }
     button{
     position: relative;
