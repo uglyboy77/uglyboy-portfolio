@@ -5,7 +5,7 @@ html,body{
     transition:1s;
     scroll-behavior: smooth;
     zoom:100%;
-    overflow-X:hidden;
+    overflow-x:hidden;
 }
 body.dark-mode {
   background-color:#100C08;
