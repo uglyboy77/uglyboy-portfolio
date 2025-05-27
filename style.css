@@ -281,7 +281,7 @@ body.dark-mode {
     font-size: 40px;
     position: fixed;
     top: 10px;
-    left: 15px;
+    right : 15px;
     z-index:3;
     padding:60px;
   }
@@ -308,7 +308,7 @@ nav, #toggle{
  }
   #toggle.show{
     z-index:4;
-    padding:33px;
+    padding:33.5px;
  }
     button{
     position: relative;
