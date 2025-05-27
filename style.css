@@ -294,7 +294,7 @@ nav, #toggle{
   visibility: visible;
   opacity: 1;
   transition: 2s ease-in-out;
-  background-color: rgb(189, 175, 149);
+  background-color: #2c3e50;
   padding: 25px;
   position: fixed;
   z-index: 3;
