@@ -5,6 +5,7 @@ html,body{
     transition:1s;
     scroll-behavior: smooth;
     zoom:100%;
+    overflow-X:hidden;
 }
 body.dark-mode {
   background-color:#100C08;
@@ -292,9 +293,10 @@ nav, #toggle{
   visibility: visible;
   opacity: 1;
   transition: 2s ease-in-out;
-  background-color:transparent;
+  background-color: white;
+  position:fixed;
   padding: 25px;
-  z-index: 3;
+  z-index: 4;
   display: flex;
   box-shadow: 5px 5px 5px pink;
  }
