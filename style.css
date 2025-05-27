@@ -281,14 +281,15 @@ body.dark-mode {
     font-size: 40px;
     position: fixed;
     top: 10px;
-    left: 2px;
+    left: 15px;
     z-index:3;
-    padding:53px;
+    padding:60px;
   }
 nav, #toggle{
   visibility: hidden;
   opacity: 0;
   transition: 2s ease-in-out;
+  transform:translate(0.5, 0.5);
  }
  nav.show, #toggle.show{
   visibility: visible;
@@ -299,6 +300,7 @@ nav, #toggle{
   position: fixed;
   z-index: 3;
   display: flex;
+  box-shadow: 5px 5px 5px pink;
  }
  nav.show{
   width: 60%;
@@ -306,7 +308,7 @@ nav, #toggle{
  }
   #toggle.show{
     z-index:4;
-    padding:34px;
+    padding:33px;
  }
     button{
     position: relative;
