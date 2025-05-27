@@ -300,12 +300,13 @@ nav, #toggle{
  }
  nav.show{
   width: 50%;
-  padding-left: 85px;
+  padding-left: 75px;
  }
   #toggle.show{
     z-index:4;
     position:relative;
     top:5px;
+    right:25px;
     background-color:transparent;
  }
     button{
