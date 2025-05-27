@@ -20,6 +20,26 @@ setTimeout(() => {
     main.style.zIndex = '1000';
   }
 }, 1000);
+
+function menutoggle() {
+  const nav = document.querySelector("nav");
+  const toggle = document.getElementById("toggle");
+  const toggleMenu = document.querySelector(".togglemenu");
+  const icon = toggleMenu.querySelector("i");
+
+  nav.classList.toggle("show");
+  toggle.classList.toggle("show");
+ 
+
+  if (icon.classList.contains("fa-bars")) {
+    icon.classList.remove("fa-bars");
+    icon.classList.add("fa-times");
+  } else {
+    icon.classList.remove("fa-times");
+    icon.classList.add("fa-bars");
+  }
+}
+
 function toggleTheme() {
   const body = document.body;
   const themeIcon = document.getElementById('toggle');
