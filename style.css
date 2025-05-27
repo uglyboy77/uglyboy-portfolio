@@ -151,7 +151,6 @@ body.dark-mode {
   text-align: center;
   font-weight: 800;
   transition: 0.5s ease-in-out;
-
  }
  .resume:hover{
   box-shadow: 2px 2px 5px rgb(232, 158, 158);
@@ -283,8 +282,8 @@ body.dark-mode {
     position: fixed;
     top: 10px;
     left: 10px;
-    z-index:4;
-    padding:30px;
+    z-index:3;
+    padding:50px;
   }
 nav, #toggle{
   visibility: hidden;
@@ -294,7 +293,7 @@ nav, #toggle{
   visibility: visible;
   opacity: 1;
   transition: 2s ease-in-out;
-  background-color:#34495e;
+  background-color:#3f51b5;
   padding: 25px;
   position: fixed;
   z-index: 3;
@@ -306,7 +305,7 @@ nav, #toggle{
  }
   #toggle.show{
     z-index:4;
-    padding:35px;
+    padding:32px;
  }
     button{
     position: relative;
