@@ -127,6 +127,10 @@ body.dark-mode {
   nav a:active{
     color: brown;
   }
+ .small-screen-menu{
+   visibility: hidden;
+   opacity: 0;
+}
   .Image1{
     height: 40%;
     width: 40%;
@@ -270,6 +274,36 @@ body.dark-mode {
    #ack{
     margin-left: 30%;
   }
+ .small-screen-menu{
+  visibility: visible;
+  opacity: 1;
+ }
+  .togglemenu {
+    font-size: 40px;
+    position: fixed;
+    top: 5px;
+    left: 10px;
+    z-index: 1001;
+    padding:20px;
+  }
+nav, #toggle{
+  visibility: hidden;
+  opacity: 0;
+ }
+ nav.show, #toggle.show{
+  visibility: visible;
+  opacity: 1;
+  transition: 2s ease-in-out;
+  background-color: rgb(189, 175, 149);
+  padding: 25px;
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+ }
+ nav.show{
+  width: 80%;
+  padding-left: 100px;
+ }
     button{
     position: relative;
     left: 87%;
