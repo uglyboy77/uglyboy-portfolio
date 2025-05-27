@@ -304,6 +304,9 @@ nav, #toggle{
   width: 50%;
   padding-left: 75px;
  }
+body.dark-mode nav.show{
+  background-color:black;
+  }
   #toggle.show{
     z-index:4;
     position:relative;
