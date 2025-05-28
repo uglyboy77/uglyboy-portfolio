@@ -210,6 +210,10 @@ nav a:active {
   justify-content: center;
 }
 
+.image4 {
+  margin-left: 10%;
+}
+
 .project-box,
 .project-box2 {
   padding: 20px;
@@ -228,10 +232,6 @@ body.dark-mode .project-box2 {
 .project-box2 {
   position: static;
   margin-right: 2%;
-}
-
-.image4 {
-  margin-left: 10%;
 }
 
 .project-container2 {
@@ -255,6 +255,68 @@ body.dark-mode .project-box2 {
 .live1 a:hover {
   color: #181717;
   transition: color 0.3s ease-in-out;
+}
+
+.write7 {
+  text-align: center;
+}
+
+.progress-container {
+  width: 30%;
+  background-color: #eee;
+  border-radius: 5px;
+  margin-left: 2%;
+  box-shadow: 5px 2px 5px #555555;
+}
+
+.progress-bar,
+.progress-bar-1,
+.progress-bar-2,
+.progress-bar-3,
+.progress-bar-4,
+.progress-bar-5,
+.progress-bar-6 {
+  width: 96%;
+  height: 30px;
+  background-color: #000000;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+.progress-bar-1 {
+  width: 94%;
+}
+
+.progress-bar-2 {
+  width: 85%;
+}
+
+.progress-bar-3 {
+  width: 73%;
+}
+
+.progress-bar-4 {
+  width: 70%;
+}
+
+.progress-bar-5 {
+  width: 66%;
+}
+
+.progress-bar-6 {
+  width: 46%;
+}
+
+body.dark-mode .progress-bar {
+  background-color: #0c0c0c;
+  color: rgb(247, 245, 245);
+}
+
+body.dark-mode .progress-container {
+  background-color: #fdfcfc;
 }
 
 body.dark-mode .live1 a:hover {
@@ -297,13 +359,12 @@ h2 {
   text-align: center;
 }
 
-.image5,
-.image6,
-.image7,
-.image8,
-.image9 {
+
+.image8 {
   width: 10%;
   height: 5%;
+  position: relative;
+  left: 10%;
 }
 
 .lng1,
