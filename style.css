@@ -327,6 +327,11 @@ h3 {
   color: #ff5722;
 }
 
+svg {
+  position: relative;
+  top: 3px;
+}
+
 .connects {
   align-items: center;
   text-align: center;
@@ -442,6 +447,9 @@ footer {
 
   .resume {
     width: 50%;
+    position: relative;
+    left: 25%;
+
   }
 }
 
