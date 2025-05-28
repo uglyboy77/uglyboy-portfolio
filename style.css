@@ -227,6 +227,11 @@ body.dark-mode .project-box2 {
 
 .project-box2 {
   position: static;
+  margin-right: 2%;
+}
+
+.image4 {
+  margin-left: 10%;
 }
 
 .project-container2 {
