@@ -7,7 +7,7 @@ setTimeout(() => {
   if (loading && main) {
     loading.style.zIndex = '0';
     loading.style.display = 'none';
-    main.style.zIndex = '1000';
+    main.style.zIndex = '3';
   }
 }, 1000);
 
