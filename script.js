@@ -55,7 +55,7 @@ function toggleTheme() {
 }
 document.addEventListener('DOMContentLoaded', () => {
   const theme = localStorage.getItem('theme');
-  const themeIcon = document.getElementById('theme-icon');
+  const themeIcon = document.getElementById('toggle');
   if (theme === 'dark') {
     document.body.classList.add('dark-mode');
     themeIcon.textContent = '☼';
