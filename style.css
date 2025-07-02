@@ -6,7 +6,7 @@ body {
   transition: 1s;
   scroll-behavior: smooth;
   zoom: 100%;
-  overflow-x: hidden;
+
 }
 
 body.dark-mode {
@@ -97,13 +97,15 @@ body.dark-mode {
   margin-left: 43%;
 }
 
-button {
+#toggle {
   background-color: transparent;
   border: none;
   font-size: 250%;
   position: relative;
-  left: 97%;
+  top: 0;
+  right: 2%;
   cursor: pointer;
+  position: fixed;
 }
 
 body.dark-mode button {
@@ -134,16 +136,24 @@ body.dark-mode button {
   height: 100%;
 }
 
+.menu {
+  position: fixed;
+  width: 95%;
+  top: 50px;
+  word-spacing: 50px;
+}
+
 .menu,
 nav a {
   text-decoration: none;
   color: black;
   text-align: right;
-  margin-right: 3%;
-  word-spacing: 20px;
-  position: relative;
-  margin-top: 5%;
-  margin-bottom: 10%;
+
+}
+
+.menu,
+#toggle {
+  transition: transform 0.3s ease;
 }
 
 body.dark-mode nav a {
@@ -202,22 +212,26 @@ nav a:active {
 
 #projects {
   text-align: center;
+  margin-top: 10%;
+
 }
 
 .Projects {
   display: flex;
   gap: 20px;
   justify-content: center;
+  overflow-x: auto;
+  width: 180%;
 }
 
 .image4 {
   margin-left: 10%;
 }
 
-.image5{
-  width: 300px;
-  height: 450px;
-  margin-left: 10%;
+.image5 {
+  width: 250px;
+  height: 350px;
+  margin-left: 15%;
 }
 
 .project-box,
@@ -428,6 +442,12 @@ footer {
 
 /* screens */
 @media (min-width:120px) and (max-width:450px) and (min-height:120px) and (max-height:950px) {
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
   #ack {
     margin-left: 30%;
   }
@@ -439,7 +459,6 @@ footer {
 
   .togglemenu {
     font-size: 25px;
-    position: fixed;
     top: 10px;
     left: 0;
     z-index: 4;
@@ -457,19 +476,26 @@ footer {
     opacity: 1;
     transition: 2s ease-in-out;
     background-color: white;
-    position: fixed;
     padding: 25px;
     z-index: 4;
     display: flex;
     box-shadow: 5px 5px 5px pink;
   }
 
+  nav a {
+    margin-left: 5%;
+  }
+
   nav.show {
     width: 50%;
-    padding-left: 75px;
+    transform: translateX(25%);
   }
 
   body.dark-mode nav.show {
+    background-color: black;
+  }
+
+  body.dark-mode .togglemenu {
     background-color: black;
   }
 
@@ -491,6 +517,10 @@ footer {
     display: block;
   }
 
+  .Projects {
+    width: 100%;
+  }
+
   .project-box,
   .project-box2,
   .Image2 {
@@ -504,6 +534,11 @@ footer {
     width: 80%;
     position: relative;
     left: 10%;
+  }
+
+  .image5 {
+    width: 180px;
+    height: 250px;
   }
 
   .image3 {
@@ -521,11 +556,16 @@ footer {
     width: 50%;
     position: relative;
     left: 25%;
-
   }
 }
 
 @media (min-width:451px) and (max-width:850px) {
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
   .Projects {
     display: block;
   }
