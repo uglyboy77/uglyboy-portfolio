@@ -258,14 +258,13 @@ nav a:active {
   display: flex; 
 }
 
-body.dark-mode .project-box,
-body.dark-mode .project-box2 {
-  border-color: #100C08;
+body.dark-mode .project-box{
+  border-color: #898887;
 }
-
-
-.project-box:hover,
-.project-box2:hover {
+body.dark-mode .project-box:hover{
+  box-shadow: 2px 2px 10px rgba(180, 180, 180, 0.354);
+}
+.project-box:hover{
   box-shadow:  2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -619,7 +618,6 @@ footer {
     width: 50%;
   }
 }
-
 
 @media (min-width:851px) and (max-width:1370px) {
   .Image2 {
