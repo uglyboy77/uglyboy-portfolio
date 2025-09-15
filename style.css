@@ -6,7 +6,8 @@ body {
   transition: 1s;
   scroll-behavior: smooth;
   zoom: 100%;
-
+  scrollbar-width: thin;
+  scrollbar-color: white black;
 }
 
 body.dark-mode {
@@ -148,7 +149,6 @@ nav a {
   text-decoration: none;
   color: black;
   text-align: right;
-
 }
 
 .menu,
@@ -194,34 +194,29 @@ nav a:active {
   align-items: center;
 }
 
+.resume-container{
+  display: flex;
+  justify-content: center;
+}
 .resume {
   background-color: rgb(126, 3, 241);
   border-radius: 5px;
   width: 15%;
-  position: relative;
-  left: 43%;
   text-align: center;
   font-weight: 800;
   transition: 0.5s ease-in-out;
+  cursor: pointer;
 }
 
 .resume:hover {
   box-shadow: 2px 2px 5px rgb(232, 158, 158);
   transition: 0.5s ease-in-out;
+  background-color: #817575;
 }
 
 #projects {
   text-align: center;
   margin-top: 10%;
-
-}
-
-.Projects {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  overflow-x: auto;
-  width: 180%;
 }
 
 .image4 {
@@ -233,15 +228,34 @@ nav a:active {
   height: 350px;
   margin-left: 15%;
 }
+.project-container{
+  overflow-y: auto;
+  padding: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: white black;
+  display: flex;
+  gap: 20px;
+}
 
-.project-box,
-.project-box2 {
-  padding: 20px;
-  border: 1px solid #ddd;
-  width: 550px;
-  transition: box-shadow 0.3s ease-in-out;
-  margin-left: 20px;
-  border-radius: 20px;
+.project-box{
+  width: 30%;
+  padding: 10px;
+  border-radius: 8px;
+  cursor:default;
+  border: solid #eee;
+  margin-bottom: 10px;
+}
+
+.image-wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.project-box img{
+  width: 180px;
+  height: 220px;
+  border-radius: 10px;
+  display: flex; 
 }
 
 body.dark-mode .project-box,
@@ -249,23 +263,12 @@ body.dark-mode .project-box2 {
   border-color: #100C08;
 }
 
-.project-box2 {
-  position: static;
-  margin-right: 2%;
-}
-
-.project-container2 {
-  margin-left: 20%;
-}
 
 .project-box:hover,
 .project-box2:hover {
-  box-shadow: 15px 20px 400px rgba(168, 167, 167, 0.3);
+  box-shadow:  2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.project-container {
-  margin-left: 13%;
-}
 
 .live1 {
   align-items: center;
@@ -273,7 +276,7 @@ body.dark-mode .project-box2 {
 }
 
 .live1 a:hover {
-  color: #181717;
+  color: #af1f41;
   transition: color 0.3s ease-in-out;
 }
 
@@ -413,9 +416,43 @@ h3 {
   color: #ff5722;
 }
 
+.fa-brands:hover, svg:hover, .material-icons:hover{
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
+
+.fa-instagram:hover {
+  background: linear-gradient(45deg, red, blue, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-twitter:hover {
+  background-color: skyblue;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-snapchat:hover{
+  background-color: yellow;
+  color: #000000;
+}
+
+.fa-linkedin:hover{
+  color: #7200ec;
+}
+
+path:hover{
+  fill: #000000;
+}
+
 svg {
   position: relative;
   top: 3px;
+}
+
+.material-icons:hover{
+  color: #af1f41;
 }
 
 .connects {
@@ -459,28 +496,30 @@ footer {
 
   .togglemenu {
     font-size: 25px;
-    top: 10px;
-    left: 0;
     z-index: 4;
-    border:none;
+    position: fixed;
+    left:5px;
+    top:5px;
+    background-color: #e1dee1;
+    border: none;
   }
 
   nav,
   #toggle {
     visibility: hidden;
     opacity: 0;
+    transition: 0.9s ease-in-out;
   }
 
   nav.show,
   #toggle.show {
     visibility: visible;
     opacity: 1;
-    transition: 2s ease-in-out;
     background-color: white;
     padding: 25px;
     z-index: 4;
     display: flex;
-    box-shadow: 5px 5px 5px pink;
+    box-shadow: 5px 5px 5px rgb(209, 203, 203);
   }
 
   nav a {
@@ -500,6 +539,10 @@ footer {
     background-color: black;
   }
 
+  #about{
+     display: block;
+  }
+
   #toggle.show {
     z-index: 4;
     position: relative;
@@ -513,23 +556,12 @@ footer {
     left: 87%;
   }
 
-  .Projects,
-  #about {
-    display: block;
-  }
-
-  .Projects {
-    width: 100%;
-  }
-
-  .project-box,
-  .project-box2,
-  .Image2 {
-    width: 80%;
-    height: 80%;
-    font-size: small;
-  }
-
+.project-container{
+ display: block;
+}
+.project-box{
+  width: 75%;
+}
   .Image1 {
     height: 80%;
     width: 80%;
@@ -566,10 +598,15 @@ footer {
   body {
     overflow-x: hidden;
   }
-
-  .Projects {
-    display: block;
+  .Image1{
+     width: 60%;
+     height: 70%;
+     position: relative;
+     left: 20%;
   }
+ #about,.project-container{
+    display: block;
+}
 
   #write0 {
     font-size: smaller;
@@ -578,7 +615,11 @@ footer {
   .resume {
     width: 50%;
   }
+  .project-box{
+    width: 50%;
+  }
 }
+
 
 @media (min-width:851px) and (max-width:1370px) {
   .Image2 {
