@@ -21,6 +21,24 @@ setTimeout(() => {
   }
 }, 1000);
 
+
+let lastScrollTop = 0;
+const nav = document.querySelector('.menu');
+const toggle = document.querySelector('#toggle');
+
+window.addEventListener('scroll', () => {
+  const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (currentScroll <= lastScrollTop) {
+    nav.style.top = '50px';
+    toggle.style.transform = 'translateY(0)';
+  } else {
+    nav.style.top = '-100px';
+    toggle.style.transform = 'translateY(-100%)';
+  }
+});
+
+
 function menutoggle() {
   const nav = document.querySelector("nav");
   const toggle = document.getElementById("toggle");
@@ -30,7 +48,6 @@ function menutoggle() {
   nav.classList.toggle("show");
   toggle.classList.toggle("show");
 
-
   if (icon.classList.contains("fa-bars")) {
     icon.classList.remove("fa-bars");
     icon.classList.add("fa-times");
@@ -39,6 +56,7 @@ function menutoggle() {
     icon.classList.add("fa-bars");
   }
 }
+
 
 function toggleTheme() {
   const body = document.body;
@@ -63,6 +81,8 @@ document.addEventListener('DOMContentLoaded', () => {
     themeIcon.textContent = '☽';
   }
 });
+
+
 window.onload = function () {
   const progressBar = document.querySelector('.progress-bar');
   const progressBar1 = document.querySelector('.progress-bar-1');
@@ -135,6 +155,7 @@ window.onload = function () {
 
   updateProgress();
 };
+
 
 document.addEventListener("scroll", function () {
   const section = document.querySelector("#connect");
